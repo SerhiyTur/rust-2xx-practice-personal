@@ -21,4 +21,15 @@ fn test32() {
     println!("Success!");
 }
 
+#[test]
+fn test33() {
+    let x: i32 = 10;
+    {
+        let y: i32 = 5;
+        println!("The value of x is {} and value of y is {}", x, y);
+    }
+    // Щоб уникнути помилки, просто виведемо тільки x
+    println!("The value of x is {}", x);
+}
+
 
