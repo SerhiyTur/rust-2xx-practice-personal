@@ -32,9 +32,15 @@ fn test33() {
     println!("The value of x is {}", x);
 }
 #[test]
-fn test34() {
-    let x = "hello";  // Оголошення змінної x
+fn test() {
+    let x = "hello"; // Оголошуємо змінну x у функції main
     println!("{}, world", x);
-    define_x(); // Викликаємо функцію, щоб уникнути попередження
-}fn define_x() {
-    let x = "hello"; // Оголошення змінної x всередині функції define_x
+}
+
+fn define_x() {
+    // У цій функції вже не потрібно оголошувати змінну x
+}
+
+
+
+
