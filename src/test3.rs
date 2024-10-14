@@ -31,5 +31,12 @@ fn test33() {
     // Щоб уникнути помилки, просто виведемо тільки x
     println!("The value of x is {}", x);
 }
-
+#[test]
+fn test() {
+    let x = "hello";  // Оголошення змінної x
+    println!("{}, world", x);
+    define_x(); // Викликаємо функцію, щоб уникнути попередження
+}fn define_x() {
+    let x = "hello"; // Оголошення змінної x всередині функції define_x
+}
 
