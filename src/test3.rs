@@ -32,14 +32,16 @@ fn test33() {
     println!("The value of x is {}", x);
 }
 #[test]
-fn test() {
-    let x = "hello"; // Оголошуємо змінну x у функції main
-    println!("{}, world", x);
+fn test34() {
+    let x = "hello"; // Оголошуємо змінну x безпосередньо у функції main
+    println!("{}, world", x); // Використовуємо змінну x
 }
 
 fn define_x() {
-    // У цій функції вже не потрібно оголошувати змінну x
+    let _x = "hello"; // Оголошуємо змінну _x, але не використовуємо її
 }
+
+
 
 
 
