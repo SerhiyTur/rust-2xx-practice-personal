@@ -1,26 +1,20 @@
+
+const SIZE: usize = 5;
 #[test]
 fn test() {
-    const SIZE: i32 = 5; // Константа визначає половину висоти ромба (висота верхньої частини)
+    for i in 0..SIZE * 2 + 1 {
+        let num_stars = if i < SIZE {
+            2 * i + 1
+        } else {
+            2 * (SIZE * 2 - i) + 1
+        };
+        let spaces = SIZE * 2 - num_stars / 2;
 
-    // Верхня частина ромба
-    for i in 0..=SIZE {
-        for _ in 0..(SIZE - i) {
-            print!(" "); // Виводимо пробіли
-        }
-        for _ in 0..(2 * i + 1) {
-            print!("*"); // Виводимо зірочки
-        }
-        println!(); // Переходимо на новий рядок
-    }
+        print!("{}{}",
+               " ".repeat(spaces),
+               "*".repeat(num_stars)
+        );
 
-    // Нижня частина ромба
-    for i in (0..SIZE).rev() {
-        for _ in 0..(SIZE - i) {
-            print!(" "); // Виводимо пробіли
-        }
-        for _ in 0..(2 * i + 1) {
-            print!("*"); // Виводимо зірочки
-        }
-        println!(); // Переходимо на новий рядок
+        println!();
     }
 }
