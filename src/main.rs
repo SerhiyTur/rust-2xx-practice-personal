@@ -4,9 +4,10 @@ mod chapter5;
 mod chapter6;
 mod test3;
 mod romb;
-mod envelope;
 mod SimpleArraySum;
 mod ComparetheTriplets;
+mod AVeryBigSum;
+mod DiagonalDifference;
 
 fn main() {
     println!("Hello, world!");
