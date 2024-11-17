@@ -1,4 +1,3 @@
-
 const SIZE: usize = 5;
 #[test]
 fn test() {
