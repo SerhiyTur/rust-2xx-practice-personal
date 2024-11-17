@@ -8,6 +8,12 @@ mod SimpleArraySum;
 mod ComparetheTriplets;
 mod AVeryBigSum;
 mod DiagonalDifference;
+mod PlusMinus;
+mod Staircase;
+mod MiniMaxSum;
+mod BirthdayCakeCandles;
+mod TimeConversion;
+mod GradingStudents;
 
 fn main() {
     println!("Hello, world!");
